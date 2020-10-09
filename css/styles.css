@@ -205,7 +205,7 @@ img {
 .submit-btn:hover,
 .hero-button:focus,
 .submit-btn:focus {
-  background: #188ce8;
+  background-color: #188ce8;
 }
 /* ==========END HERO================= */
 
@@ -462,6 +462,7 @@ img {
   width: 206px;
   padding-top: 12px;
   padding-bottom: 40px;
+  margin-right: 93px;
 }
 .social-title {
   font-weight: 700;
@@ -501,6 +502,75 @@ img {
   width: 20px;
   height: 20px;
 }
+.footer-form {
+  padding-top: 12px;
+  max-width: 570px;
+}
+.footer-form-title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+.footer-form-input {
+  width: 358px;
+  font-style: normal;
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: #ffffff;
+  margin-right: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  outline: none;
+  background-color: transparent;
+}
+.footer-form-input:focus {
+  border-color: #188ce8;
+}
+.footer-form-input::placeholder {
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-button {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border: none;
+  color: #ffffff;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+  background-color: #188ce8;
+}
+
+.footer-form-icon {
+  margin-left: 10px;
+}
 
 /* ==========END FOOTER================= */
 
@@ -519,7 +589,7 @@ img {
   opacity: 1;
 
   transition: opacity 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95),
-  visibility 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    visibility 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -548,7 +618,7 @@ img {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  
+
   transform: translate(0px, 0px) perspective(600px) rotateY(0deg);
   transition: 800ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
