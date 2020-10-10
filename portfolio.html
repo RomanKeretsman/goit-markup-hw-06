@@ -245,7 +245,7 @@
                                             Компании используют эту платформу для цифрового шпионажа и атак на
                                             защищённые
                                             сервера конкурентов.
-                                            </p>
+                                        </p>
                                     </div>
 
                                     <div class="portfolio-card-box">
@@ -311,7 +311,7 @@
                         </li>
                     </ul>
                 </div>
-                <form class="footer-form" action="">
+                <form class="footer-form js-speaker-form" action="">
                     <label class="footer-form-title" for="mail">Подпишитесь на рассылку</label>
                     <input class="footer-form-input" id="mail" type="email" name="email" placeholder="E-mail">
                     <button class="footer-form-button" type="submit">Подписаться
@@ -322,6 +322,17 @@
                 </form>
             </div>
         </footer>
+        <script>
+            (() => {
+                document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+                });
+            })();
+        </script>
     </body>
 
     </html>
