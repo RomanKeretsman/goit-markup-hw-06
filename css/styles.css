@@ -414,10 +414,11 @@ img {
 }
 .footer .container {
   display: flex;
+  justify-content: space-between;
 }
 .footer-contacts {
   width: 231px;
-  margin-right: 70px;
+  margin-right: 15px;
 }
 .footer-logo {
   display: inline-block;
@@ -462,7 +463,7 @@ img {
   width: 206px;
   padding-top: 12px;
   padding-bottom: 40px;
-  margin-right: 93px;
+  margin-right: 15px;
 }
 .social-title {
   font-weight: 700;
@@ -517,13 +518,18 @@ img {
 
   color: #ffffff;
 }
+.footer-form-content {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+}
 .footer-form-input {
+  display: inline-block;
   width: 358px;
   font-style: normal;
   font-family: var(--main-font);
   font-weight: 400;
   color: #ffffff;
-  margin-right: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 16px;
