@@ -397,14 +397,17 @@
                 </ul>
             </div>
             <form class="footer-form">
-                <label class="footer-form-title" for="mail">Подпишитесь на рассылку</label>
                 <div class="footer-form-content">
-                    <input class="footer-form-input" id="mail" type="email" name="email" placeholder="E-mail">
-                    <button class="footer-form-button" type="submit">Подписаться
-                        <svg class="footer-form-icon" width="24" height="24">
-                            <use href="./images/icon/sprite-icon.svg#icon-telegram"></use>
-                        </svg>
-                    </button>
+                    <label class="footer-form-title" for="mail">Подпишитесь на рассылку
+                    </label>
+                    <div class="footer-form-wrapper">
+                        <input class="footer-form-input" type="email" name="email" id="mail" placeholder="E-mail">
+                        <button class="footer-form-button" type="submit">Подписаться
+                            <svg class="footer-form-icon" width="24" height="24">
+                                <use href="./images/icon/sprite-icon.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -450,24 +453,21 @@
                         </label>
                     </div>
 
-                    <label class="form-label">
-                        Комментарий
-                        <textarea class="form-comment" name="comment" placeholder="Введите текст" rows="5">
-                        </textarea>
+                    <label class="form-label">Комментарий
+                        <textarea class="form-comment" name="comment" placeholder="Введите текст"></textarea>
                     </label>
 
                     <div class="checkbox-wrapper">
                         <label class="form-checkbox-label">
                             <input class="checkbox-input" type="checkbox" name="topic" value="ok">
                             <svg class="checkbox-icon" width="16" height="15">
-                                <use href="./images/icon/sprite-icon.svg#icon-check"></use>
+                                <use href="./images/icon/sprite-icon.svg#icon-checked"></use>
                             </svg>
                             <span class="form-text">Соглашаюсь с рассылкой и принимаю <a class="contract"
                                     href="">Условия
                                     договора</a></span>
                         </label>
                     </div>
-
                 </form>
                 <button class="submit-btn" type="submit">Отправить</button>
             </div>
