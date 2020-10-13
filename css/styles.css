@@ -738,23 +738,23 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.checkbox-icon {
+.form-checkbox-label::before {
+  content: "";
   width: 16px;
   height: 15px;
   margin-right: 8px;
   cursor: pointer;
-  
-  border: 2px solid;
-  border-color: var(--title-color);
   background-color: #ffffff;
+  border: 2px solid var(--title-color);
   border-radius: 2px;
-  fill: transparent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition : 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-input:checked + .checkbox-icon {
+.checkbox-input:checked + .form-checkbox-label::before {
   background-color: var(--accent-color);
-  fill: #ffffff;
-  border: transparent;
+  background-image: url(../images/icon/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
 }
 .form-text {
   font-weight: 400;
@@ -769,9 +769,13 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  text-decoration-line: underline;
 
-  color: #2196f3;
+  color: var(--title-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contract:hover,
+.contract:focus {
+  color: var(--accent-color);
 }
 .submit-btn {
   display: block;
